@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*, ::before , ::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+   color: rgba(31, 31, 31, 0.87);
+  background-color: #fdfdfd;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  
+  font-size: 62.5%; 
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Reddit Sans, sans-serif;
+  display: flex;
+  flex-direction: row;
+  min-width: 320px;
+  min-height: 100vh;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Playwrite DK Uloopet, cursive
+ 
+}
+
+h1 {
+  font-size: 3.2rem;
+  & .title{
+    font-size: 3.2rem;
+    color: red;
+  }
+}
+h2 {
+  font-size: 2.6rem;
+  color: rgb(0, 21, 255);
+}
+h3 {
+  font-size: 2.4rem;
+}
+h4 {
+  font-size: 2.2rem;
+}
+h5 {
+  font-size: 2rem;
+}
+h6 {
+  font-size: 1.8rem;
+}
+
+a {
+  font-weight: 500;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+ul, ol, li {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
