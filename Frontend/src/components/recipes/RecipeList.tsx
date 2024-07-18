@@ -25,6 +25,9 @@ export default function RecipeList () {
     <>
      <main className="m-8 ">
      <h1>Les recettes du moment</h1>
+     <aside className='bg-red-500'>
+
+     </aside>
      <section className="grid grid-cols-1 gap-4 md:grid-cols-3 gap-4 p4 ">
        {recipes.map((recipe: Recipes) => (
           <Recipe key={recipe.id}

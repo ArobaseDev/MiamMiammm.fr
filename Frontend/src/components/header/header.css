@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* form {
+  @apply flex justify-center w-full gap-1 p-2 my-5;
+}
+
+input {
+  @apply font-light text-center border rounded-full border-neutral-200;
+}
+
+button {
+  @apply px-4 py-2 font-light transition-all duration-300 rounded-full bg-neutral-200 text-slate-50 bg-gradient-to-r from-red-700 to-amber-500 hover:bg-gradient-to-b hover:from-amber-500 hover:to-red-700 hover:text-slate-50;
+} */
+
+form {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+input {
+  border: 0.1rem solid red
+}

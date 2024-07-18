@@ -5,6 +5,8 @@ import './assets/css/index.css';
 import './assets/css/style.css';
 import App from './App.tsx';
 import RecipeDetail from './components/recipes/RecipeDetail.tsx';
+import RecipeForm from './components/recipes/RecipeForm.tsx';
+import FavoriteRecipes from './components/recipes/FavoriteRecipes.tsx';
 
 const router = createBrowserRouter(
   [
@@ -16,7 +18,10 @@ const router = createBrowserRouter(
       path: '/recipes/:id', element: <RecipeDetail /> 
     },
     {
-   //   path: '/favorites-recipes', element: <App /> 
+     path: '/favorites-recipes', element: <FavoriteRecipes /> 
+    },
+    {
+     path: '/recipes/add', element: <RecipeForm /> 
     },
 
   ]

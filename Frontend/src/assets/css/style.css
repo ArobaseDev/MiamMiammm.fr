@@ -17,7 +17,7 @@
  .header h1 {
     color: rgb(255, 0, 21);
     font-style: italic;
-    margin-right: 3rem;
+    /* margin-right: 9rem; */
   }
 
 
@@ -26,9 +26,8 @@
   flex-direction: row;
   justify-content: flex-end;
   align-items: right;
-  background-color: #f9f9f9;
-  gap: 2rem;
-  padding: 1rem 5rem;
+  gap: 0.1rem;
+  padding: 1rem 1rem;
   align-content: end;
   font-size:  1.4rem;
 }
@@ -53,7 +52,17 @@
 }
 
 .hummm {
-  margin-left: -16rem
+  /* margin-left: -16rem */
+}
+.recipe-search-form {
+  width: 60rem;
+  height: 7rem;
+}
+.search-form {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  width: 100%
 }
 
 .recipe-card {

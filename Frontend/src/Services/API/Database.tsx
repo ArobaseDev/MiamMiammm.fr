@@ -63,7 +63,7 @@ async function createRecipe(recipe: Recipes): Promise<number> {
  * */
 
 async function updateRecipe(id: number, recipe: Recipes): Promise<void> {
-  await fetch(`${recipesUrl}/${id}`, {
+  await fetch(`${recipesUrl}/?id=${id}`, {
     method: 'PUT',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(recipe),
@@ -76,7 +76,19 @@ async function updateRecipe(id: number, recipe: Recipes): Promise<void> {
  * */
 
 export async function deleteRecipe(id: number): Promise<void> {
-  await fetch(`${recipesUrl}/${id}`, { method: 'DELETE' });
+  await fetch(`${recipesUrl}/?id=${id}`, { method: 'DELETE' });
 }
+
+/**
+ * Rechercher des recette depuis le formulaire
+ * 
+ * */
+export async function searchRecipe(query: string): Promise<Recipes[]> {
+  
+  const response = await fetch(`${recipesUrl}/&s=${query}`);
+  return await response.json();
+}
+
+
 
 export { getRecipes, getRecipeById, createRecipe, updateRecipe };
