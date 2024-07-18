@@ -1,0 +1,537 @@
+{
+  "recipes": [
+    {
+      "id": 716429,
+      "name": "Poulet aux poivrons avec riz pilaf",
+      "image": "https://spoonacular.com/recipeImages/716429-556x370.jpg",
+      "prepTime": "45 minutes",
+      "category": "Plat principal",
+      "origin": "Française",
+      "ingredients": [
+        "500g de poulet",
+        "1 poivron rouge",
+        "1 poivron vert",
+        "200g de riz basmati",
+        "2 cuillères à soupe d'huile d'olive",
+        "Sel",
+        "Poivre"
+      ],
+      "preparationSteps": [
+        "Coupez les poivrons en fines lanières.",
+        "Faites chauffer l'huile dans une poêle et faites revenir les poivrons pendant 5 minutes.",
+        "Ajoutez le poulet coupé en morceaux et faites cuire jusqu'à ce qu'il soit doré.",
+        "Ajoutez le riz et remuez bien.",
+        "Ajoutez 400ml d'eau, couvrez et laissez cuire pendant 20 minutes.",
+        "Assaisonnez avec du sel et du poivre à votre goût."
+      ],
+      "servings": 4,
+      "cookingTips": "Utilisez du bouillon de poulet à la place de l'eau pour plus de saveur."
+    },
+    {
+      "id": 715538,
+      "name": "Salade de Quinoa",
+      "image": "https://spoonacular.com/recipeImages/715538-556x370.jpg",
+      "prepTime": "30 minutes",
+      "category": "Entrée",
+      "origin": "Méditerranéenne",
+      "ingredients": [
+        "1 tasse de quinoa",
+        "2 tasses d'eau",
+        "1/4 tasse d'huile d'olive",
+        "1/2 tasse de jus de citron",
+        "Sel",
+        "Poivre",
+        "Légumes de votre choix"
+      ],
+      "preparationSteps": [
+        "Rincez le quinoa.",
+        "Faites bouillir l'eau.",
+        "Ajoutez le quinoa et laissez cuire pendant 15 minutes.",
+        "Égouttez et laissez refroidir.",
+        "Mélangez avec l'huile d'olive, le jus de citron, le sel, le poivre et les légumes."
+      ],
+      "servings": 4,
+      "cookingTips": "Ajoutez des herbes fraîches comme le persil ou la menthe pour plus de saveur."
+    },
+    {
+      "id": 642605,
+      "name": "Smoothie banane et épinards",
+      "image": "https://spoonacular.com/recipeImages/642605-556x370.jpg",
+      "prepTime": "10 minutes",
+      "category": "Dessert",
+      "origin": "Américaine",
+      "ingredients": [
+        "1 banane",
+        "1 tasse d'épinards",
+        "1 tasse de lait d'amande",
+        "1 cuillère à soupe de beurre de cacahuète",
+        "1 cuillère à café de miel"
+      ],
+      "preparationSteps": [
+        "Mettez tous les ingrédients dans un blender.",
+        "Mixez jusqu'à obtenir une texture lisse.",
+        "Servez immédiatement."
+      ],
+      "servings": 2,
+      "cookingTips": "Ajoutez des glaçons pour un smoothie plus frais."
+    },
+    {
+      "id": 715495,
+      "name": "Spaghetti à la bolognaise",
+      "image": "https://spoonacular.com/recipeImages/715495-556x370.jpg",
+      "prepTime": "60 minutes",
+      "category": "Plat principal",
+      "origin": "Italienne",
+      "ingredients": [
+        "200g de spaghetti",
+        "400g de boeuf haché",
+        "1 oignon",
+        "2 gousses d'ail",
+        "1 boîte de tomates concassées",
+        "2 cuillères à soupe d'huile d'olive",
+        "Sel",
+        "Poivre",
+        "Basilic"
+      ],
+      "preparationSteps": [
+        "Faites cuire les spaghetti selon les instructions du paquet.",
+        "Hachez l'oignon et l'ail.",
+        "Faites chauffer l'huile dans une poêle et faites revenir l'oignon et l'ail jusqu'à ce qu'ils soient dorés.",
+        "Ajoutez le boeuf haché et faites cuire jusqu'à ce qu'il soit bien cuit.",
+        "Ajoutez les tomates concassées, le sel, le poivre et le basilic.",
+        "Laissez mijoter pendant 30 minutes.",
+        "Servez la sauce sur les spaghetti."
+      ],
+      "servings": 4,
+      "cookingTips": "Ajoutez une pincée de sucre pour réduire l'acidité des tomates."
+    },
+    {
+      "id": 632660,
+      "name": "Soupe à la tomate",
+      "image": "https://spoonacular.com/recipeImages/632660-556x370.jpg",
+      "prepTime": "40 minutes",
+      "category": "Entrée",
+      "origin": "Française",
+      "ingredients": [
+        "6 tomates",
+        "1 oignon",
+        "2 gousses d'ail",
+        "1 carotte",
+        "1 branche de céleri",
+        "2 cuillères à soupe d'huile d'olive",
+        "Sel",
+        "Poivre",
+        "Basilic"
+      ],
+      "preparationSteps": [
+        "Hachez les légumes.",
+        "Faites chauffer l'huile dans une casserole et faites revenir l'oignon, l'ail, la carotte et le céleri jusqu'à ce qu'ils soient tendres.",
+        "Ajoutez les tomates et 1 litre d'eau.",
+        "Laissez mijoter pendant 30 minutes.",
+        "Mixez la soupe jusqu'à obtenir une texture lisse.",
+        "Assaisonnez avec du sel, du poivre et du basilic."
+      ],
+      "servings": 4,
+      "cookingTips": "Ajoutez une cuillère de crème fraîche avant de servir pour plus d'onctuosité."
+    },
+    {
+      "id": 660405,
+      "name": "Tacos au poisson",
+      "image": "https://spoonacular.com/recipeImages/660405-556x370.jpg",
+      "prepTime": "30 minutes",
+      "category": "Plat principal",
+      "origin": "Mexicaine",
+      "ingredients": [
+        "400g de filet de poisson blanc",
+        "8 tortillas",
+        "1 avocat",
+        "1 tomate",
+        "1 oignon rouge",
+        "1 citron vert",
+        "2 cuillères à soupe de crème fraîche",
+        "Sel",
+        "Poivre",
+        "Coriandre"
+      ],
+      "preparationSteps": [
+        "Coupez le poisson en morceaux.",
+        "Faites chauffer une poêle et faites cuire le poisson pendant 5 minutes de chaque côté.",
+        "Coupez l'avocat, la tomate et l'oignon rouge en dés.",
+        "Réchauffez les tortillas.",
+        "Garnissez les tortillas avec le poisson, l'avocat, la tomate, l'oignon et la crème fraîche.",
+        "Pressez le citron vert sur les tacos et garnissez de coriandre."
+      ],
+      "servings": 4,
+      "cookingTips": "Ajoutez du piment pour une touche épicée."
+    },
+    {
+      "id": 157344,
+      "name": "Brownies au chocolat",
+      "image": "https://spoonacular.com/recipeImages/157344-556x370.jpg",
+      "prepTime": "50 minutes",
+      "category": "Dessert",
+      "origin": "Américaine",
+      "ingredients": [
+        "200g de chocolat noir",
+        "150g de beurre",
+        "150g de sucre",
+        "3 oeufs",
+        "100g de farine",
+        "1 cuillère à café de levure chimique",
+        "1 pincée de sel"
+      ],
+      "preparationSteps": [
+        "Préchauffez le four à 180°C.",
+        "Faites fondre le chocolat et le beurre au bain-marie.",
+        "Ajoutez le sucre et mélangez bien.",
+        "Ajoutez les oeufs un par un en mélangeant bien entre chaque ajout.",
+        "Ajoutez la farine, la levure et le sel.",
+        "Versez la pâte dans un moule beurré et fariné.",
+        "Faites cuire au four pendant 30 minutes.",
+        "Laissez refroidir avant de couper en carrés."
+      ],
+      "servings": 8,
+      "cookingTips": "Ajoutez des noix ou des pépites de chocolat pour plus de gourmandise."
+    },
+    {
+      "id": 7155400,
+      "name": "Salade César",
+      "image": "https://spoonacular.com/recipeImages/715540-556x370.jpg",
+      "prepTime": "20 minutes",
+      "category": "Entrée",
+      "origin": "Américaine",
+      "ingredients": [
+        "1 laitue romaine",
+        "2 poitrines de poulet",
+        "50g de parmesan",
+        "1 boîte d'anchois",
+        "1 oeuf",
+        "1 cuillère à soupe de moutarde",
+        "1 citron",
+        "2 cuillères à soupe d'huile d'olive",
+        "Croûtons",
+        "Sel",
+        "Poivre"
+      ],
+      "preparationSteps": [
+        "Coupez la laitue en morceaux.",
+        "Faites cuire les poitrines de poulet et coupez-les en tranches.",
+        "Préparez la sauce César en mélangeant l'oeuf, la moutarde, le jus de citron, l'huile d'olive, le sel et le poivre.",
+        "Ajoutez les anchois hachés et le parmesan râpé.",
+        "Mélangez la laitue avec la sauce, les tranches de poulet et les croûtons."
+      ],
+      "servings": 4,
+      "cookingTips": "Ajoutez des copeaux de parmesan pour une présentation élégante."
+    },
+    {
+      "id": 64635,
+      "name": "Ratatouille",
+      "image": "https://spoonacular.com/recipeImages/64635-556x370.jpg",
+      "prepTime": "60 minutes",
+      "category": "Plat principal",
+      "origin": "Française",
+      "ingredients": [
+        "2 aubergines",
+        "2 courgettes",
+        "2 poivrons",
+        "4 tomates",
+        "1 oignon",
+        "2 gousses d'ail",
+        "3 cuillères à soupe d'huile d'olive",
+        "Sel",
+        "Poivre",
+        "Herbes de Provence"
+      ],
+      "preparationSteps": [
+        "Coupez les légumes en dés.",
+        "Faites chauffer l'huile dans une grande poêle.",
+        "Faites revenir l'oignon et l'ail jusqu'à ce qu'ils soient dorés.",
+        "Ajoutez les aubergines et les poivrons et faites cuire pendant 10 minutes.",
+        "Ajoutez les courgettes et les tomates et faites cuire pendant 20 minutes.",
+        "Assaisonnez avec du sel, du poivre et des herbes de Provence.",
+        "Laissez mijoter à feu doux pendant 30 minutes."
+      ],
+      "servings": 6,
+      "cookingTips": "Servez avec du riz ou de la baguette pour un repas complet."
+    },
+    {
+      "id": 6326600,
+      "name": "Soupe aux pois cassés",
+      "image": "https://spoonacular.com/recipeImages/632660-556x370.jpg",
+      "prepTime": "50 minutes",
+      "category": "Entrée",
+      "origin": "Française",
+      "ingredients": [
+        "300g de pois cassés",
+        "1 oignon",
+        "2 gousses d'ail",
+        "1 carotte",
+        "1 branche de céleri",
+        "2 cuillères à soupe d'huile d'olive",
+        "1 litre de bouillon de légumes",
+        "Sel",
+        "Poivre",
+        "Thym"
+      ],
+      "preparationSteps": [
+        "Rincez les pois cassés.",
+        "Hachez l'oignon, l'ail, la carotte et le céleri.",
+        "Faites chauffer l'huile dans une casserole et faites revenir les légumes pendant 5 minutes.",
+        "Ajoutez les pois cassés et le bouillon de légumes.",
+        "Laissez mijoter pendant 40 minutes.",
+        "Mixez la soupe jusqu'à obtenir une texture lisse.",
+        "Assaisonnez avec du sel, du poivre et du thym."
+      ],
+      "servings": 4,
+      "cookingTips": "Ajoutez des croûtons pour plus de croquant."
+    },
+    {
+      "id": 659143,
+      "name": "Tarte aux pommes",
+      "image": "https://spoonacular.com/recipeImages/659143-556x370.jpg",
+      "prepTime": "70 minutes",
+      "category": "Dessert",
+      "origin": "Française",
+      "ingredients": [
+        "1 pâte brisée",
+        "5 pommes",
+        "50g de sucre",
+        "50g de beurre",
+        "1 cuillère à café de cannelle",
+        "1 cuillère à soupe de jus de citron"
+      ],
+      "preparationSteps": [
+        "Préchauffez le four à 180°C.",
+        "Épluchez et coupez les pommes en fines tranches.",
+        "Disposez la pâte brisée dans un moule à tarte.",
+        "Disposez les tranches de pommes en rosace sur la pâte.",
+        "Saupoudrez de sucre, de cannelle et de jus de citron.",
+        "Parsemez de morceaux de beurre.",
+        "Faites cuire au four pendant 45 minutes."
+      ],
+      "servings": 8,
+      "cookingTips": "Servez tiède avec une boule de glace à la vanille."
+    },
+    {
+      "id": 715446,
+      "name": "Soupe à l'oignon",
+      "image": "https://spoonacular.com/recipeImages/715446-556x370.jpg",
+      "prepTime": "60 minutes",
+      "category": "Entrée",
+      "origin": "Française",
+      "ingredients": [
+        "6 oignons",
+        "1 litre de bouillon de boeuf",
+        "1 cuillère à soupe de farine",
+        "2 cuillères à soupe de beurre",
+        "Sel",
+        "Poivre",
+        "Pain",
+        "Fromage râpé"
+      ],
+      "preparationSteps": [
+        "Épluchez et émincez les oignons.",
+        "Faites fondre le beurre dans une casserole et faites revenir les oignons jusqu'à ce qu'ils soient caramélisés.",
+        "Ajoutez la farine et remuez bien.",
+        "Ajoutez le bouillon de boeuf et laissez mijoter pendant 30 minutes.",
+        "Assaisonnez avec du sel et du poivre.",
+        "Servez avec des tranches de pain grillé et du fromage râpé."
+      ],
+      "servings": 4,
+      "cookingTips": "Gratinez la soupe au four pour un effet croustillant."
+    },
+    {
+      "id": 715392,
+      "name": "Pizza Margherita",
+      "image": "https://spoonacular.com/recipeImages/715392-556x370.jpg",
+      "prepTime": "90 minutes",
+      "category": "Plat principal",
+      "origin": "Italienne",
+      "ingredients": [
+        "300g de pâte à pizza",
+        "200g de sauce tomate",
+        "200g de mozzarella",
+        "Basilic frais",
+        "2 cuillères à soupe d'huile d'olive",
+        "Sel"
+      ],
+      "preparationSteps": [
+        "Préchauffez le four à 220°C.",
+        "Étalez la pâte à pizza sur une plaque de cuisson.",
+        "Répartissez la sauce tomate sur la pâte.",
+        "Ajoutez la mozzarella coupée en tranches.",
+        "Versez l'huile d'olive sur la pizza et saupoudrez de sel.",
+        "Faites cuire au four pendant 15-20 minutes.",
+        "Garnissez de feuilles de basilic avant de servir."
+      ],
+      "servings": 4,
+      "cookingTips": "Utilisez de la mozzarella di bufala pour un goût authentique."
+    },
+    {
+      "id": 715544,
+      "name": "Salade de betteraves",
+      "image": "https://spoonacular.com/recipeImages/715544-556x370.jpg",
+      "prepTime": "40 minutes",
+      "category": "Entrée",
+      "origin": "Russe",
+      "ingredients": [
+        "3 betteraves",
+        "1 oignon rouge",
+        "3 cuillères à soupe de vinaigre de cidre",
+        "2 cuillères à soupe d'huile d'olive",
+        "Sel",
+        "Poivre",
+        "Persil frais"
+      ],
+      "preparationSteps": [
+        "Faites cuire les betteraves dans l'eau bouillante pendant 30 minutes.",
+        "Laissez refroidir, épluchez et coupez en dés.",
+        "Émincez l'oignon rouge.",
+        "Mélangez les betteraves, l'oignon, le vinaigre, l'huile d'olive, le sel et le poivre.",
+        "Parsemez de persil frais avant de servir."
+      ],
+      "servings": 4,
+      "cookingTips": "Ajoutez des noix grillées pour plus de croquant."
+    },
+    {
+      "id": 644826,
+      "name": "Crêpes sucrées",
+      "image": "https://spoonacular.com/recipeImages/644826-556x370.jpg",
+      "prepTime": "30 minutes",
+      "category": "Dessert",
+      "origin": "Française",
+      "ingredients": [
+        "250g de farine",
+        "3 oeufs",
+        "1/2 litre de lait",
+        "50g de sucre",
+        "50g de beurre",
+        "1 pincée de sel"
+      ],
+      "preparationSteps": [
+        "Mélangez la farine, le sucre et le sel.",
+        "Ajoutez les oeufs et mélangez bien.",
+        "Ajoutez le lait progressivement en remuant.",
+        "Faites fondre le beurre et ajoutez-le à la pâte.",
+        "Laissez reposer la pâte pendant 30 minutes.",
+        "Faites chauffer une poêle et faites cuire les crêpes jusqu'à ce qu'elles soient dorées."
+      ],
+      "servings": 4,
+      "cookingTips": "Servez avec du sucre, du citron, de la confiture ou du Nutella."
+    },
+    {
+      "id": 658509,
+      "name": "Tarte au citron meringuée",
+      "image": "https://spoonacular.com/recipeImages/658509-556x370.jpg",
+      "prepTime": "120 minutes",
+      "category": "Dessert",
+      "origin": "Française",
+      "ingredients": [
+        "1 pâte sablée",
+        "4 citrons",
+        "150g de sucre",
+        "4 oeufs",
+        "50g de beurre",
+        "2 blancs d'oeufs",
+        "100g de sucre"
+      ],
+      "preparationSteps": [
+        "Préchauffez le four à 180°C.",
+        "Étalez la pâte sablée dans un moule à tarte et faites-la cuire à blanc pendant 15 minutes.",
+        "Râpez le zeste des citrons et pressez le jus.",
+        "Mélangez le jus, le zeste, le sucre, les oeufs et le beurre dans une casserole.",
+        "Faites chauffer à feu doux jusqu'à épaississement.",
+        "Versez la crème au citron sur la pâte et laissez refroidir.",
+        "Montez les blancs d'oeufs en neige avec le sucre jusqu'à obtenir une meringue ferme.",
+        "Étalez la meringue sur la tarte et faites dorer au four pendant 10 minutes."
+      ],
+      "servings": 6,
+      "cookingTips": "Laissez refroidir complètement avant de servir pour que la meringue soit bien ferme."
+    },
+    {
+      "id": 647302,
+      "name": "Salade de pommes de terre",
+      "image": "https://spoonacular.com/recipeImages/647302-556x370.jpg",
+      "prepTime": "30 minutes",
+      "category": "Entrée",
+      "origin": "Allemande",
+      "ingredients": [
+        "1kg de pommes de terre",
+        "1 oignon rouge",
+        "3 cuillères à soupe de vinaigre de vin",
+        "4 cuillères à soupe d'huile d'olive",
+        "1 cuillère à soupe de moutarde",
+        "Sel",
+        "Poivre",
+        "Ciboulette"
+      ],
+      "preparationSteps": [
+        "Faites cuire les pommes de terre dans l'eau bouillante pendant 20 minutes.",
+        "Laissez refroidir, épluchez et coupez en rondelles.",
+        "Émincez l'oignon rouge.",
+        "Mélangez le vinaigre, l'huile, la moutarde, le sel et le poivre pour faire la vinaigrette.",
+        "Mélangez les pommes de terre, l'oignon et la vinaigrette.",
+        "Parsemez de ciboulette hachée avant de servir."
+      ],
+      "servings": 4,
+      "cookingTips": "Ajoutez des lardons grillés pour une version plus gourmande."
+    },
+    {
+      "id": 715769,
+      "name": "Poulet au curry",
+      "image": "https://spoonacular.com/recipeImages/715769-556x370.jpg",
+      "prepTime": "40 minutes",
+      "category": "Plat principal",
+      "origin": "Indienne",
+      "ingredients": [
+        "500g de poulet",
+        "1 oignon",
+        "2 gousses d'ail",
+        "200ml de lait de coco",
+        "2 cuillères à soupe de pâte de curry",
+        "2 cuillères à soupe d'huile",
+        "Sel",
+        "Poivre",
+        "Coriandre"
+      ],
+      "preparationSteps": [
+        "Coupez le poulet en morceaux.",
+        "Hachez l'oignon et l'ail.",
+        "Faites chauffer l'huile dans une poêle et faites revenir l'oignon et l'ail jusqu'à ce qu'ils soient dorés.",
+        "Ajoutez le poulet et faites cuire jusqu'à ce qu'il soit doré.",
+        "Ajoutez la pâte de curry et remuez bien.",
+        "Ajoutez le lait de coco et laissez mijoter pendant 20 minutes.",
+        "Assaisonnez avec du sel et du poivre.",
+        "Parsemez de coriandre hachée avant de servir."
+      ],
+      "servings": 4,
+      "cookingTips": "Servez avec du riz basmati pour un repas complet."
+    },
+    {
+      "id": 715540,
+      "name": "Salade de concombre à la menthe",
+      "image": "https://spoonacular.com/recipeImages/715540-556x370.jpg",
+      "prepTime": "15 minutes",
+      "category": "Entrée",
+      "origin": "Méditerranéenne",
+      "ingredients": [
+        "2 concombres",
+        "1 yaourt nature",
+        "2 cuillères à soupe de menthe fraîche",
+        "1 cuillère à soupe d'huile d'olive",
+        "Sel",
+        "Poivre",
+        "Jus de citron"
+      ],
+      "preparationSteps": [
+        "Épluchez et coupez les concombres en fines rondelles.",
+        "Mélangez le yaourt, l'huile d'olive, le sel, le poivre et le jus de citron dans un bol.",
+        "Ajoutez les concombres et la menthe hachée à la sauce.",
+        "Mélangez bien et servez frais."
+      ],
+      "servings": 4,
+      "cookingTips": "Ajoutez des graines de sésame grillées pour plus de texture."
+    }
+  ]  
+}
+   
