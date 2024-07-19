@@ -47,7 +47,7 @@ export default function Recipe ({recipe}: RecipeProps) {
       <img src={recipe.image} alt={"image " + recipe.name} />
       </NavLink>
       
-      <p className="text-center flex flex-column justify-center mt-2 gap-2"> <h4><TfiAlarmClock/></h4>  {recipe.prepTime} </p>
+      <p className="text-center flex flex-column justify-center mt-2 gap-2"><TfiAlarmClock/>  {recipe.prepTime} </p>
       <div className="card-footer flex justify-between xl-4 p-5">
       <NavLink
       to={"/recipes/"+recipe.id}

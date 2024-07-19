@@ -65,6 +65,10 @@
   width: 100%
 }
 
+.aside-bar {
+  background-color:tan
+}
+
 .recipe-card {
   background-color: white;
   border-radius: 1rem;
