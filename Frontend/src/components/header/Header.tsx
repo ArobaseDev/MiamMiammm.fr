@@ -5,14 +5,15 @@ import topChef from '../../assets/img/top-chef.png'
 import hummm from '../../assets/img/hummm.png'
 import { FaRegHeart } from "react-icons/fa";
 import './header.css'
+import { useSearch } from "../../services/providers/AppProvider";
 
 export default function Header () {
  // const [searchTerm, setSearchTerm] = useState("")
  const [favoritesNumber, setFavoritesNumber] = useState()
+  const { state, dispatch } = useSearch();
 
   useEffect(() => {
     getFavoritesNumber()
-
   }, [favoritesNumber])
   
  const getFavoritesNumber = () => {
@@ -21,21 +22,18 @@ export default function Header () {
   return favorites.length;
  }
 
-  const [query, setQuery] = useState("")
+  // const [query, setQuery] = useState("")
 
-  const searchRecipe = (query: string) => {
-    console.log("Recherche : " + query)
-  }
+  // const searchRecipe = (query: string) => {
+  //   console.log("Recherche : " + query)
+  // }
 
 const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
   e.preventDefault()
   const value = e.target.value;
-  setQuery(value);
-  searchRecipe(query)
+ dispatch({ type: "SET_QUERY", payload: value})
 
 }
-
-
 
   return (
     <>
