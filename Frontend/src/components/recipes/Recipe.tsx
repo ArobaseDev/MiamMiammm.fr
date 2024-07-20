@@ -18,7 +18,7 @@ export default function Recipe({ recipe }: RecipeProps) {
   // Vérifier si la recette est déjà dans les favoris
   useEffect(() => {
     const favorites = JSON.parse(localStorage.getItem('Miam-Miammm-favorites')) || [];
-    setIsFavorite(favorites.some(fav => fav.id === recipe.id));
+    setIsFavorite(favorites.some(favorite => favorite.id === recipe.id));
   }, [recipe.id]);
 
   const toggleFavorite = () => {
@@ -26,7 +26,7 @@ export default function Recipe({ recipe }: RecipeProps) {
 
     if (isFavorite) {
       // Retirer la recette des favoris
-      favorites = favorites.filter(fav => fav.id !== recipe.id);
+      favorites = favorites.filter(favorite => favorite.id !== recipe.id);
     } else {
       // Ajouter la recette aux favoris
       favorites.push(recipe);

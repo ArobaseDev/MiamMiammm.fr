@@ -1,26 +1,28 @@
 import { NavLink } from "react-router-dom"
 import { ChangeEvent, useEffect, useState } from "react"
-import {motion} from 'framer-motion'
+import { motion } from 'framer-motion'
 import topChef from '../../assets/img/top-chef.png'
 import hummm from '../../assets/img/hummm.png'
 import { FaRegHeart } from "react-icons/fa";
 import './header.css'
 import { useSearch } from "../../services/providers/AppProvider";
+import  RecipeSearch  from "../recipes/RecipeSearch"
 
-export default function Header () {
- // const [searchTerm, setSearchTerm] = useState("")
- const [favoritesNumber, setFavoritesNumber] = useState()
+
+export default function Header() {
+  // const [searchTerm, setSearchTerm] = useState("")
+  const [favoritesNumber, setFavoritesNumber] = useState()
   const { state, dispatch } = useSearch();
 
   useEffect(() => {
     getFavoritesNumber()
   }, [favoritesNumber])
-  
- const getFavoritesNumber = () => {
-  const favorites = JSON.parse(localStorage.getItem('Miam-Miammm-favorites')) || [];
-   setFavoritesNumber(favorites.length)
-  return favorites.length;
- }
+
+  const getFavoritesNumber = () => {
+    const favorites = JSON.parse(localStorage.getItem('Miam-Miammm-favorites')) || [];
+    setFavoritesNumber(favorites.length)
+    return favorites.length;
+  }
 
   // const [query, setQuery] = useState("")
 
@@ -28,16 +30,16 @@ export default function Header () {
   //   console.log("Recherche : " + query)
   // }
 
-const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
-  e.preventDefault()
-  const value = e.target.value;
- dispatch({ type: "SET_QUERY", payload: value})
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+    e.preventDefault()
+    const value = e.target.value;
+    dispatch({ type: "SET_QUERY", payload: value })
 
-}
+  }
 
   return (
     <>
-    <header className=" header text-red">
+      <header className=" header text-red">
         <div className="flex items-center">
           <h3>Hummmm Trop Bon !!!</h3>
           <img src={hummm} alt="" className="header-brand-logo hummm" />
@@ -50,41 +52,11 @@ const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
           </NavLink>
 
         </div>
+        <RecipeSearch 
+        onChange={handleChange}
+        />
 
-      
-        
-        
-    
-    <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="recipe-search-form"
-        >
-          <form 
-            className=" search-form max-w-sm mx-auto  flex justify-center  gap-1 p-2 my-5"
-           
-            >
-              
-
-            <input 
-            className="font-light text-center border rounded-full border-neutral-200 w-full py-4 text-2xl      "
-            placeholder="Un plaisir ?"
-            type="text"
-            onChange={handleChange}
-          
-            />
-            <button
-            className=" px-4 py-2 font-light transition-all duration-300 rounded-full bg-neutral-200 text-slate-50 bg-gradient-to-r from-red-900 to-orange-500 hover:bg-gradient-to-b hover:from-orange-500 hover:to-red-900 hover:text-slate-50"
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-search" viewBox="0 0 16 16">
-                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-              </svg>
-            </button>
-          </form>
-        </motion.div>
-
-    </header>
+      </header>
 
       <header>
         <nav className="bg-white border-gray-200 px-4 lg:px-6 py-6 dark:bg-gray-800">
@@ -121,7 +93,7 @@ const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
       </header>
 
 
-    
+
     </>
   )
 }

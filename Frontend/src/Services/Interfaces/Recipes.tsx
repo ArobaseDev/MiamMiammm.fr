@@ -1,5 +1,5 @@
 export default interface Recipes {
-  [x: string]: any;
+//  [x: string]: any;
   id: number;
   name: string;
   image: string;

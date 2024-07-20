@@ -4,7 +4,7 @@ import { getRecipes } from '../../services/API/Database';
 import Recipe from './Recipe';
 import CardMessage from '../cards/CardMessage';
 import { useSearch } from '../../services/providers/AppProvider';
-import Recipes from '../../Services/interfaces/Recipes';
+import Recipes from '../../services/interfaces/Recipes';
 
 export default function RecipeList() {
   const [recipes, setRecipes] = useState([]);
@@ -31,8 +31,8 @@ export default function RecipeList() {
 
   const handleCategoryChange = (category) => {
     setSelectedCategories((prevCategories) => prevCategories.includes(category)
-        ? prevCategories.filter((c) => c !== category)
-        : [...prevCategories, category]
+      ? prevCategories.filter((c) => c !== category)
+      : [...prevCategories, category]
     );
   };
 
@@ -42,9 +42,9 @@ export default function RecipeList() {
 
   const filteredRecipes = recipes
     .filter(recipe =>
-      recipe.name.toLowerCase().includes(state.query.toLowerCase()) || 
+      recipe.name.toLowerCase().includes(state.query.toLowerCase()) ||
       recipe.origin.toLowerCase().includes(state.query.toLowerCase()) ||
-       recipe.category.toLowerCase().includes(state.query.toLowerCase())
+      recipe.category.toLowerCase().includes(state.query.toLowerCase())
     )
     .filter(recipe =>
       selectedCategories.length ? selectedCategories.includes(recipe.category) : true
@@ -55,14 +55,14 @@ export default function RecipeList() {
 
   return (
     <div className="h-full w-full flex flex-column">
-        <aside className=" aside-bar w-1/6 p-4 h-full">
+      <aside className=" aside-bar w-1/6 p-4 h-full">
 
         <section>
 
           <h4 className="text-slate-900 pl-5 pt-5">Nos types de plats</h4>
           {categories.map((category) => (
-            <div 
-            key={category}
+            <div
+              key={category}
               className="flex items-center mx-5 py-2"
             >
               <input
@@ -72,21 +72,21 @@ export default function RecipeList() {
                 checked={selectedCategories.includes(category)}
                 onChange={() => handleCategoryChange(category)}
               />
-              <label 
-              htmlFor={category} 
+              <label
+                htmlFor={category}
                 className="text-3xl ml-2  font-medium text-gray-900 dark:text-indigo-800"
               >
-              {category}
+                {category}
               </label>
             </div>
           ))}
         </section>
         <section>
           <h4 className="text-slate-900 pl-5 pt-5">Nos Spécialités</h4>
-          <select 
-          value={selectedOrigin} 
-          onChange={handleOriginChange} 
-          className="w-full mt-2 p-2 border rounded"
+          <select
+            value={selectedOrigin}
+            onChange={handleOriginChange}
+            className="w-full mt-2 p-2 border rounded"
           >
             <option value="">Select an origin</option>
             {origins.map((origin) => (
@@ -94,8 +94,8 @@ export default function RecipeList() {
             ))}
           </select>
         </section>
-             
-        </aside>
+
+      </aside>
 
       <main className="m-8 p-4">
         <h1>Les recettes du moment</h1>
@@ -114,7 +114,7 @@ export default function RecipeList() {
           {filteredRecipes.length > 0 ? (
 
             filteredRecipes.map((recipe: Recipes) => (
-             <Recipe key={recipe.id} recipe={recipe} />
+              <Recipe key={recipe.id} recipe={recipe} />
             ))
 
           ) : (
@@ -122,6 +122,6 @@ export default function RecipeList() {
           )}
         </section>
       </main>
-      </div>
+    </div>
   );
 }

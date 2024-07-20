@@ -88,12 +88,16 @@
 
 recipe-detail-section-left {
   align-items: center;
+  width: 50%;
   
 }
 
 .recipe-detail {
   width: 100%;
-  padding: auto 0 ;
+  /* padding: auto  ;
+  margin: auto 0; */
+  /* background-color: red; */
+  height: 80vh;
 }
 
 .recipe-detail-img {

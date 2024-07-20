@@ -39,8 +39,8 @@ export default function RecipeDetail() {
     <>
       <Header />
 
-      <main className="recipe-detail flex m-6 p-6 gap-10 items-center ">
-        <section className="recipe-detail-section-left">
+      <div className="recipe-detail flex items-center  p-6 gap-10 justify-start ">
+        <section className="recipe-detail-section-left w-1/2">
           <img src={recipe.image} alt="" className="rounded-2xl recipe-detail-img" />
         </section>
         <section className="recipe-detail-section-right">
@@ -67,13 +67,8 @@ export default function RecipeDetail() {
           <button onClick={addToFavorites}>Ajouter à mes recettes préférées</button>
           {/* <button onClick={deleteRecipe}>Supprimer cette recette</button> */}
         </section>
-      </main>
+      </div>
 
-
-
-
-
-      {/* <button onClick={deleteRecipe}>Supprimer cette recette</button> */}
     </>
   )
 }
