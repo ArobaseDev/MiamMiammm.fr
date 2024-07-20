@@ -1,4 +1,4 @@
-import Recipes from "../../Services/Interfaces/Recipes"
+import Recipes from "../../services/interfaces/Recipes"
 import { NavLink } from "react-router-dom";
 import { TfiEye } from "react-icons/tfi";
 import { FaRegHeart } from "react-icons/fa";
@@ -7,12 +7,12 @@ import { useState, useEffect } from "react";
 
 
 interface RecipeProps {
-recipe : Recipes;
+  recipe: Recipes;
 }
 
 
 
-export default function Recipe ({recipe}: RecipeProps) {
+export default function Recipe({ recipe }: RecipeProps) {
   const [isFavorite, setIsFavorite] = useState(false);
 
   // Vérifier si la recette est déjà dans les favoris
@@ -37,23 +37,23 @@ export default function Recipe ({recipe}: RecipeProps) {
   };
 
   return (
-    <article 
-    key={recipe.id}
-    className="recipe-card"
-    
+    <article
+      key={recipe.id}
+      className="recipe-card"
+
     >
       <h2 className="text-center">{recipe.name}</h2>
-      <NavLink to={"/recipes/"+recipe.id}>
-      <img src={recipe.image} alt={"image " + recipe.name} />
+      <NavLink to={"/recipes/" + recipe.id}>
+        <img src={recipe.image} alt={"image " + recipe.name} />
       </NavLink>
-      
-      <p className="text-center flex flex-column justify-center mt-2 gap-2"><TfiAlarmClock/>  {recipe.prepTime} </p>
+
+      <p className="text-center flex flex-column justify-center mt-2 gap-2"><TfiAlarmClock />  {recipe.prepTime} </p>
       <div className="card-footer flex justify-between xl-4 p-5">
-      <NavLink
-      to={"/recipes/"+recipe.id}
-      >
-      <span className="bg-transparent"> <TfiEye font-size="2.5rem" /> </span>
-      </NavLink>
+        <NavLink
+          to={"/recipes/" + recipe.id}
+        >
+          <span className="bg-transparent"> <TfiEye font-size="2.5rem" /> </span>
+        </NavLink>
         <button onClick={toggleFavorite}
 
           className={` ${isFavorite ? "bg-red-600" : "bg-transparent btn-heart items-right"} `}>
@@ -65,8 +65,8 @@ export default function Recipe ({recipe}: RecipeProps) {
         </button>
 
       </div>
-      
-     
+
+
     </article>
   )
 }

@@ -1,5 +1,5 @@
 import React, { createContext, useState, useEffect } from 'react';
-import Recipe from '../Interfaces/Recipes';
+import Recipe from '../interfaces/Recipes';
 
 interface FavoritesContextType {
   favorites: Recipe[];

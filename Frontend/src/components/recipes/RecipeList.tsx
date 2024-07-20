@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import { getRecipes } from '../../Services/API/Database';
-import Recipes from '../../Services/Interfaces/Recipes';
+import { getRecipes } from '../../services/API/Database';
+import Recipes from '../../services/interfaces/Recipes';
 import Recipe from './Recipe';
 import CardMessage from '../cards/CardMessage';
 
@@ -21,7 +21,7 @@ export default function RecipeList() {
       const response = await getRecipes();
       setRecipes(response);
       extractOrigins(response); // Extrait les origines uniques des recettes récupérées
-   
+
     } catch (error) {
       console.error(error);
     }
@@ -39,7 +39,7 @@ export default function RecipeList() {
     recipesList();
   }, []);
 
- 
+
 
   const handleFilterChange = (e) => {
     const { id, checked } = e.target;
@@ -138,25 +138,25 @@ export default function RecipeList() {
       <main className="m-8 p-4">
         <h1>Les recettes du moment</h1>
 
-              {
-                filteredRecipes.length === 0 && (
-                  
-                  <CardMessage 
-                  message = " Aucune recette ne correspond à vos critères de recherche."
-                  />
-                )
-              }
+        {
+          filteredRecipes.length === 0 && (
+
+            <CardMessage
+              message=" Aucune recette ne correspond à vos critères de recherche."
+            />
+          )
+        }
 
 
         <section className="grid grid-cols-1 gap-4 md:grid-cols-3 gap-4 p4">
           {filteredRecipes.length > 0 ? (
-            
+
             filteredRecipes.map((recipe: Recipes) => (
               <Recipe key={recipe.id} recipe={recipe} />
             ))
-            
+
           ) : (
-           <p></p>
+            <p></p>
           )}
         </section>
       </main>

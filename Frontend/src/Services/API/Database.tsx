@@ -21,7 +21,7 @@ const recipesUrl: string = `http://localhost:3001/recipes`
 //   servings: number;
 // }
 
-import Recipes from "../Interfaces/Recipes";
+import Recipes from "../interfaces/Recipes";
 
 async function getRecipes(): Promise<Recipes[]> {
   const response = await fetch(recipesUrl);
@@ -84,7 +84,7 @@ export async function deleteRecipe(id: number): Promise<void> {
  * 
  * */
 export async function searchRecipe(query: string): Promise<Recipes[]> {
-  
+
   const response = await fetch(`${recipesUrl}/&s=${query}`);
   return await response.json();
 }
