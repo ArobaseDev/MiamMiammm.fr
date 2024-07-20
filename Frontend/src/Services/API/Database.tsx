@@ -7,7 +7,7 @@
  * Récupère toutes les recettes.
  * @returns Les recettes sous forme de tableau d'objets.
  */
-const recipesUrl: string = `http://localhost:3001/recipes`
+const recipesUrl: string = `http://192.168.0.38:3001/recipes`
 
 // interface Recipes {
 //   id: number;

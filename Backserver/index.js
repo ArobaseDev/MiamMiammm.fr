@@ -1,9 +1,14 @@
 /**
  * Serveur Express pour la mise en place d'un backend Node.js
  */
+
 const express = require('express'); // Import de Express
 const app = express(); // Application Express
 const port = 4000; // Port de démarrage de l'application
+const fs = require ('fs'); //
+const path = require('path');
+const dbFilePath = path.join(__dirname, ' db.json');
+const db = JSON.parse(fs.readFileSync(dbFilePath, 'utf8')); //
 
 
 app.use((req, res, next) => {
@@ -27,6 +32,14 @@ app.get('/recipes/:id', (req, res) => {
   const recipe = recipes.find(r => r.id === parseInt(req.params.recipes));
   if (!recipe) return res.status(404).json({ error: 'Aucune recette trouvée ...' });
   res.json(recipe);
+})
+
+app.post('/recipes', (req, res) => {
+  const newRecipe = { id: Date.now(),...req.body };
+  
+  db.recipes.push(newRecipe);
+  fs.writeFileSync(dbFilePath, JSON.stringify(db, null, 2), 'utf8');
+  res.status(201).json(newRecipe);
 })
 
 app.listen(port, () => {

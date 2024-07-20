@@ -1,14 +1,15 @@
 export default interface Recipes {
-//  [x: string]: any;
   id: number;
   name: string;
+  description: string;
+  difficulty: string;
   image: string;
-  prepTime: number;
+  prepTime: string;
   category: string;
   origin: string;
   ingredients: string[];
   preparationSteps: string[];
   servings: number;
-  cookingTips: string;
+  cookingTips: string
 }
 

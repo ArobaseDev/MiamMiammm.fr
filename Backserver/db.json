@@ -3,6 +3,8 @@
     {
       "id": 716429,
       "name": "Poulet aux poivrons avec riz pilaf",
+      "description": "",
+      "difficulty": "Moyenne",
       "image": "https://spoonacular.com/recipeImages/716429-556x370.jpg",
       "prepTime": "45 minutes",
       "category": "Plat principal",
@@ -30,6 +32,8 @@
     {
       "id": 715538,
       "name": "Salade de Quinoa",
+      "description": "",
+      "difficulty": "Facile",
       "image": "https://spoonacular.com/recipeImages/715538-556x370.jpg",
       "prepTime": "30 minutes",
       "category": "Entrée",
@@ -56,6 +60,8 @@
     {
       "id": 642605,
       "name": "Smoothie banane et épinards",
+      "description": "",
+      "difficulty": "Facile",
       "image": "https://spoonacular.com/recipeImages/642605-556x370.jpg",
       "prepTime": "10 minutes",
       "category": "Dessert",
@@ -78,6 +84,8 @@
     {
       "id": 715495,
       "name": "Spaghetti à la bolognaise",
+      "description": "",
+      "difficulty": "Moyenne",
       "image": "https://spoonacular.com/recipeImages/715495-556x370.jpg",
       "prepTime": "60 minutes",
       "category": "Plat principal",
@@ -108,6 +116,8 @@
     {
       "id": 632660,
       "name": "Soupe à la tomate",
+      "description": "",
+      "difficulty": "Moyenne",
       "image": "https://spoonacular.com/recipeImages/632660-556x370.jpg",
       "prepTime": "40 minutes",
       "category": "Entrée",
@@ -137,6 +147,8 @@
     {
       "id": 660405,
       "name": "Tacos au poisson",
+      "description": "",
+      "difficulty": "Moyenne",
       "image": "https://spoonacular.com/recipeImages/660405-556x370.jpg",
       "prepTime": "30 minutes",
       "category": "Plat principal",
@@ -167,6 +179,8 @@
     {
       "id": 157344,
       "name": "Brownies au chocolat",
+      "description": "",
+      "difficulty": "Moyenne",
       "image": "https://spoonacular.com/recipeImages/157344-556x370.jpg",
       "prepTime": "50 minutes",
       "category": "Dessert",
@@ -196,6 +210,8 @@
     {
       "id": 7155400,
       "name": "Salade César",
+      "description": "",
+      "difficulty": "Facile",
       "image": "https://spoonacular.com/recipeImages/715540-556x370.jpg",
       "prepTime": "20 minutes",
       "category": "Entrée",
@@ -226,6 +242,8 @@
     {
       "id": 64635,
       "name": "Ratatouille",
+      "description": "",
+      "difficulty": "Moyenne",
       "image": "https://spoonacular.com/recipeImages/64635-556x370.jpg",
       "prepTime": "60 minutes",
       "category": "Plat principal",
@@ -257,6 +275,8 @@
     {
       "id": 6326600,
       "name": "Soupe aux pois cassés",
+      "description": "",
+      "difficulty": "Facile",
       "image": "https://spoonacular.com/recipeImages/632660-556x370.jpg",
       "prepTime": "50 minutes",
       "category": "Entrée",
@@ -288,6 +308,8 @@
     {
       "id": 659143,
       "name": "Tarte aux pommes",
+      "description": "",
+      "difficulty": "Moyenne",
       "image": "https://spoonacular.com/recipeImages/659143-556x370.jpg",
       "prepTime": "70 minutes",
       "category": "Dessert",
@@ -315,6 +337,8 @@
     {
       "id": 715446,
       "name": "Soupe à l'oignon",
+      "description": "",
+      "difficulty": "Moyenne",
       "image": "https://spoonacular.com/recipeImages/715446-556x370.jpg",
       "prepTime": "60 minutes",
       "category": "Entrée",
@@ -343,6 +367,8 @@
     {
       "id": 715392,
       "name": "Pizza Margherita",
+      "description": "",
+      "difficulty": "Moyenne",
       "image": "https://spoonacular.com/recipeImages/715392-556x370.jpg",
       "prepTime": "90 minutes",
       "category": "Plat principal",
@@ -370,6 +396,8 @@
     {
       "id": 715544,
       "name": "Salade de betteraves",
+      "description": "",
+      "difficulty": "Moyenne",
       "image": "https://spoonacular.com/recipeImages/715544-556x370.jpg",
       "prepTime": "40 minutes",
       "category": "Entrée",
@@ -396,6 +424,8 @@
     {
       "id": 644826,
       "name": "Crêpes sucrées",
+      "description": "",
+      "difficulty": "Moyenne",
       "image": "https://spoonacular.com/recipeImages/644826-556x370.jpg",
       "prepTime": "30 minutes",
       "category": "Dessert",
@@ -422,6 +452,8 @@
     {
       "id": 658509,
       "name": "Tarte au citron meringuée",
+      "description": "",
+      "difficulty": "Dure",
       "image": "https://spoonacular.com/recipeImages/658509-556x370.jpg",
       "prepTime": "120 minutes",
       "category": "Dessert",
@@ -451,6 +483,8 @@
     {
       "id": 647302,
       "name": "Salade de pommes de terre",
+      "description": "",
+      "difficulty": "Moyenne",
       "image": "https://spoonacular.com/recipeImages/647302-556x370.jpg",
       "prepTime": "30 minutes",
       "category": "Entrée",
@@ -479,6 +513,8 @@
     {
       "id": 715769,
       "name": "Poulet au curry",
+      "description": "",
+      "difficulty": "Moyenne",
       "image": "https://spoonacular.com/recipeImages/715769-556x370.jpg",
       "prepTime": "40 minutes",
       "category": "Plat principal",
@@ -510,6 +546,8 @@
     {
       "id": 715540,
       "name": "Salade de concombre à la menthe",
+      "description": "",
+      "difficulty": "Facile",
       "image": "https://spoonacular.com/recipeImages/715540-556x370.jpg",
       "prepTime": "15 minutes",
       "category": "Entrée",
@@ -531,7 +569,82 @@
       ],
       "servings": 4,
       "cookingTips": "Ajoutez des graines de sésame grillées pour plus de texture."
+    },
+    {
+      "id": 1,
+      "name": "Spaghetti Carbonara",
+      "description": "Un plat italien classique...",
+      "difficulty": "Moyenne",
+      "image": "https://media.istockphoto.com/id/1581084025/fr/photo/assiette-avec-spaghetti-carbonara-sur-une-table-dress%C3%A9e.webp?b=1&s=170667a&w=0&k=20&c=jkJZUuUqxI-_Kqnetx95KOizEffnqxycwqK0YM4ZBuE=",
+      "prepTime": "20 minutes",
+      "category": "Plat principal",
+      "origin": "Italienne",
+      "ingredients": [
+        "Pâtes",
+        "Oeufs",
+        "Pancetta",
+        "Parmesan",
+        "Poivre"
+      ],
+      "preparationSteps": [
+        "Cuire les pâtes",
+        "Faire revenir la pancetta",
+        "Mélanger les oeufs et le parmesan",
+        "Combiner le tout"
+      ],
+      "servings": 4,
+      "cookingTips": "Utilisez des ingrédients de qualité pour un meilleur résultat"
+    },
+    {
+      "id": "f229",
+      "name": "Pizza Margherita",
+      "description": "",
+      "difficulty": "Moyenne",
+      "image": "https://spoonacular.com/recipeImages/715392-556x370.jpg",
+      "prepTime": "90 minutes",
+      "category": "Plat principal",
+      "origin": "Italienne",
+      "ingredients": [
+        "300g de pâte à pizza",
+        "200g de sauce tomate",
+        "200g de mozzarella",
+        "Basilic frais",
+        "2 cuillères à soupe d'huile d'olive",
+        "Sel"
+      ],
+      "preparationSteps": [
+        "Préchauffez le four à 220°C.",
+        "Étalez la pâte à pizza sur une plaque de cuisson.",
+        "Répartissez la sauce tomate sur la pâte.",
+        "Ajoutez la mozzarella coupée en tranches.",
+        "Versez l'huile d'olive sur la pizza et saupoudrez de sel.",
+        "Faites cuire au four pendant 15-20 minutes.",
+        "Garnissez de feuilles de basilic avant de servir."
+      ],
+      "servings": 4,
+      "cookingTips": "Utilisez de la mozzarella di bufala pour un goût authentique."
+    },
+    {
+      "id": "6526",
+      "name": "Bananes Plantin",
+      "description": "Un plat succulent aux saveurs exotique",
+      "difficulty": "Moyenne",
+      "image": "https://cac.img.pmdstatic.net/fit/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2Fcac.2F2018.2F09.2F25.2F6ea1f23a-b901-4d1d-938f-9e0547e90cae.2Ejpeg/750x562/quality/80/crop-from/center/cr/wqkgIC8gQ3Vpc2luZSBBY3R1ZWxsZQ%3D%3D/alokos-de-banane-plantain-au-pave-d-affinois-ambre.jpeg",
+      "prepTime": "20 minutes",
+      "category": "Plat principale",
+      "origin": "Africaine",
+      "ingredients": [
+        "Bananes plantain",
+        "Huile 200g",
+        "Eau",
+        "Sucre"
+      ],
+      "preparationSteps": [
+        "Découper les bananes en rondelles",
+        "Faire frire l'huile"
+      ],
+      "servings": "100",
+      "cookingTips": "Prendre le temps de bien laisser frire les babanes"
     }
-  ]  
+  ]
 }
-   

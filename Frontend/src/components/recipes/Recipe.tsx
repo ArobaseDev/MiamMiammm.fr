@@ -55,13 +55,10 @@ export default function Recipe({ recipe }: RecipeProps) {
           <span className="bg-transparent"> <TfiEye font-size="2.5rem" /> </span>
         </NavLink>
         <button onClick={toggleFavorite}
-
           className={` ${isFavorite ? "bg-red-600" : "bg-transparent btn-heart items-right"} `}>
           {
             isFavorite ? <FaRegHeart color="white" font-size="2.5rem" /> : <FaRegHeart color="red" font-size="2.5rem" />
           }
-
-
         </button>
 
       </div>
