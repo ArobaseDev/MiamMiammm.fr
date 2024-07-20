@@ -84,7 +84,6 @@ const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
               </svg>
             </button>
           </form>
-          {/* <p className="text-center text-red-500">{error ? error : ""}</p> */}
         </motion.div>
 
     </header>
