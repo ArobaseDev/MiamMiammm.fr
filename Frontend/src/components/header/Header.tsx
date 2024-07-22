@@ -9,15 +9,15 @@ import  RecipeSearch  from "../recipes/RecipeSearch"
 
 
 export default function Header() {
-  const [favoritesNumber, setFavoritesNumber] = useState()
-  const { state, dispatch } = useSearch('');
+  const [favoritesNumber, setFavoritesNumber] = useState<number>(0)
+  const {  dispatch } = useSearch();
 
   useEffect(() => {
     getFavoritesNumber()
   }, [favoritesNumber])
 
   const getFavoritesNumber = () => {
-    const favorites = JSON.parse(localStorage.getItem('Miam-Miammm-favorites')) || [];
+    const favorites = JSON.parse(localStorage.getItem('Miam-Miammm-favorites') || '[]');
     setFavoritesNumber(favorites.length)
     return favorites.length;
   }
