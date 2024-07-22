@@ -35,7 +35,7 @@ app.get('/recipes/:id', (req, res) => {
 })
 
 app.post('/recipes', (req, res) => {
-  const newRecipe = { id: Date.now(),...req.body };
+  const newRecipe = { id: new  Date().getTime(),...req.body };
   
   db.recipes.push(newRecipe);
   fs.writeFileSync(dbFilePath, JSON.stringify(db, null, 2), 'utf8');

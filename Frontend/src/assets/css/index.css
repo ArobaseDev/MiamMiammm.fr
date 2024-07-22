@@ -46,7 +46,10 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p,
+input,
+textarea {
   font-family: Playwrite DK Uloopet, cursive
  
 }
@@ -88,10 +91,10 @@ ul, ol, li {
   list-style-type: none;
 }
 
-img {
+/* img {
   max-width: 100%;
   height: auto;
-}
+} */
 
 p {
   font-size: 1.6rem;
@@ -117,6 +120,34 @@ button:focus,
 button:focus-visible {
   outline: none;
 }
+
+input[type=checkbox] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+}
+
+input[type=checkbox] {
+    -border-radius: 4px;
+    height: 15px;
+    aspect-ratio: 1/1;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+}
+
+input[type="checkbox"]:checked {
+  background: slateblue;
+  position: relative;
+  &:after {
+    font-family: FontAwesome;
+    content: '----';
+    display: block;
+    color: grey;
+    font-size: 13px;
+  }
+}
+
 
 @media (prefers-color-scheme: light) {
   :root {

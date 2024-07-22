@@ -7,7 +7,9 @@ import App from './App.tsx';
 import RecipeDetail from './components/recipes/RecipeDetail.tsx';
 import RecipeForm from './components/recipes/RecipeForm.tsx';
 import FavoriteRecipes from './components/recipes/FavoriteRecipes.tsx';
+import PageNotFound from './pages/PageNotFound.tsx';
 import { AppProvider } from './services/providers/AppProvider.tsx';
+
 
 const router = createBrowserRouter(
   [
@@ -24,6 +26,9 @@ const router = createBrowserRouter(
     {
      path: '/recipes/add', element: <RecipeForm /> 
     },
+    {
+      path: '*', element: <PageNotFound/>
+    }
 
   ]
 );

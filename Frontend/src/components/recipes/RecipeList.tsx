@@ -55,11 +55,11 @@ export default function RecipeList() {
 
   return (
     <div className="h-full w-full flex flex-column">
-      <aside className=" aside-bar w-1/6 p-4 h-full">
+      <aside className=" aside-bar w-1/6 p-4 h-full px-6 ">
 
-        <section>
+        <section className='mr-'>
 
-          <h4 className="text-slate-900 pl-5 pt-5">Nos types de plats</h4>
+          <h2 className="text-slate-900 pl-5 pt-5">Nos types de plats</h2>
           {categories.map((category) => (
             <div
               key={category}
@@ -71,24 +71,29 @@ export default function RecipeList() {
                 value={category}
                 checked={selectedCategories.includes(category)}
                 onChange={() => handleCategoryChange(category)}
+                className="form-checkbox ml-4"
               />
               <label
                 htmlFor={category}
                 className="text-3xl ml-2  font-medium text-gray-900 dark:text-indigo-800"
               >
-                {category}
+                <h5>
+                   {category}
+                </h5>
+               
               </label>
             </div>
           ))}
         </section>
-        <section>
-          <h4 className="text-slate-900 pl-5 pt-5">Nos Spécialités</h4>
+        <section className='mt-5'>
+          <h2 className='ml-5 text-red-900'>Voyage culinaire</h2>
+          <h4 className="text-slate-900 pl-5 pt-5">Découvrez les Saveurs du Monde</h4>
           <select
             value={selectedOrigin}
             onChange={handleOriginChange}
             className="w-full mt-2 p-2 border rounded"
           >
-            <option value="">Select an origin</option>
+            <option value=""></option>
             {origins.map((origin) => (
               <option key={origin} value={origin}>{origin}</option>
             ))}

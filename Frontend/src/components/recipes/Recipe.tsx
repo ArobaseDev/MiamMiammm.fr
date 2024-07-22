@@ -1,4 +1,4 @@
-import Recipes from "../../services/interfaces/Recipes"
+import Recipes from "../../services/interfaces/Recipes";
 import { NavLink } from "react-router-dom";
 import { TfiEye } from "react-icons/tfi";
 import { FaRegHeart } from "react-icons/fa";
@@ -47,13 +47,15 @@ export default function Recipe({ recipe }: RecipeProps) {
         <img src={recipe.image} alt={"image " + recipe.name} />
       </NavLink>
 
-      <p className="text-center flex flex-column justify-center mt-2 gap-2"><TfiAlarmClock />  {recipe.prepTime} </p>
+      <p className="text-center flex  justify-center mt-2 gap-2">
+        <TfiAlarmClock font-size="2rem" align-center />  {recipe.prepTime} </p>
       <div className="card-footer flex justify-between xl-4 p-5">
         <NavLink
           to={"/recipes/" + recipe.id}
         >
-          <span className="bg-transparent"> <TfiEye font-size="2.5rem" /> </span>
+        <TfiEye font-size="2.5rem" />
         </NavLink>
+        <h6 className="bg-transparent text-2xl items-start mt-4"> Difficulté : {recipe.difficulty}</h6>
         <button onClick={toggleFavorite}
           className={` ${isFavorite ? "bg-red-600" : "bg-transparent btn-heart items-right"} `}>
           {

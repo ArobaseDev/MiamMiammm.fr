@@ -1,13 +1,12 @@
-import Header from "../header/Header";
+import React from 'react';
+import FavoriteCarousel from './FavoriteCarousel';
 
-export default function FavoriteRecipes () {
+const FavoriteRecipes = () => {
   return (
-    <>
-    <Header/>
-    <main>
-      <h1>Mes recettes favorites</h1>
-      {/* Liste des recettes */}
-    </main>
-    </>
-  )
-}
+    <div className="favorite-recipes-page">
+      <FavoriteCarousel />
+    </div>
+  );
+};
+
+export default FavoriteRecipes;

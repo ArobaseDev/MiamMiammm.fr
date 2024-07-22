@@ -53,6 +53,7 @@
 
 .hummm {
   /* margin-left: -16rem */
+  display: flex;
 }
 .recipe-search-form {
   width: 60rem;
@@ -66,7 +67,7 @@
 }
 
 .aside-bar {
-  background-color:tan
+  background-color:rgb(162, 147, 123)
 }
 
 .recipe-card {
@@ -92,6 +93,14 @@ recipe-detail-section-left {
   
 }
 
+select {
+  background-color: #213547;
+  border: none;
+  color: antiquewhite;
+}
+
+
+
 .recipe-detail {
   width: 100%;
   /* padding: auto  ;
@@ -105,6 +114,14 @@ recipe-detail-section-left {
   /* height: 15rem; */
   object-fit: cover;
 }
+
+.recipe-form {
+  width: 100vw;
+}
+
+/* form {
+  width: 100%;
+} */
 
 .btn-TfiEye {
   display: inline;

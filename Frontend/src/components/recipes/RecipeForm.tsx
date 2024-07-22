@@ -1,11 +1,14 @@
 import Header from "../header/Header";
 import { useNavigate } from "react-router-dom";
 import React, { useState } from "react";
+import FormImg from '../../assets/img/regal-1.png'
+
 
 import { createRecipe } from "../../services/API/Database";
 import Recipes from "../../services/interfaces/Recipes";
+import '../../assets/css/recipe.form.css'
 
-export default function RecipeForm () {
+export default function RecipeForm() {
   const [recipe, setRecipe] = useState({
     name: '',
     description: '',
@@ -22,6 +25,7 @@ export default function RecipeForm () {
 
   const [errors, setErrors] = useState<any>({});
   const navigate = useNavigate();
+  const [selectedFile, setSelectedFile] = useState(null)
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
@@ -75,178 +79,222 @@ export default function RecipeForm () {
 
   return (
     <>
-    <Header/>
-    <main>
-      <div className="recipe-form">
+      <Header />
+      <main className="m-8 w-screen">
+        <h1 className="ml-8">Ajouter une nouvelle recette</h1>
 
-          <h1>Ajouter une recette</h1>
+        <div className="recipe-form m-5 container-fluid b-  w-screen flex ">
 
-          <form onSubmit={handleSubmit} className="space-y-4">
-            <div>
-              <label htmlFor="name" className="block text-lg font-medium text-gray-700">Nom</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                value={recipe.name}
-                onChange={handleChange}
-                className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                required
-              />
-              {errors.name && <p className="text-red-500 text-sm">{errors.name}</p>}
-            </div>
+          <div className='form-container'>
+            <div className='left-container'>
+    <h2 className="mx-9 ">Yay, Super! Nous avons hâte de déguster ça !!!</h2>
 
-            <div>
-              <label htmlFor="description" className="block text-lg font-medium text-gray-700">Description</label>
-              <textarea
-                id="description"
-                name="description"
-                value={recipe.description}
-                onChange={handleChange}
-                className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                required
-              />
-              {errors.description && <p className="text-red-500 text-sm">{errors.description}</p>}
-            </div>
 
-            <div>
-              <label htmlFor="difficulty" className="block text-lg font-medium text-gray-700">Difficulté</label>
-              <select
-                id="difficulty"
-                name="difficulty"
-                value={recipe.difficulty}
-                onChange={handleChange}
-                className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                required
-              >
-                <option value="">Sélectionnez une difficulté</option>
-                <option value="Facile">Facile</option>
-                <option value="Moyenne">Moyenne</option>
-                <option value="Difficile">Difficile</option>
-              </select>
-              {errors.difficulty && <p className="text-red-500 text-sm">{errors.difficulty}</p>}
-            </div>
+              <form onSubmit={handleSubmit} className="create-recipe-form">
 
-            <div>
-              <label htmlFor="image" className="block text-lg font-medium text-gray-700">Image</label>
-              <input
-                type="text"
-                id="image"
-                name="image"
-                value={recipe.image}
-                onChange={handleChange}
-                className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                required
-              />
-              {errors.image && <p className="text-red-500 text-sm">{errors.image}</p>}
-            </div>
+              <header>
 
-            <div>
-              <label htmlFor="prepTime" className="block text-lg font-medium text-gray-700">Temps de préparation (minutes)</label>
-              <input
-                type="text"
-                id="prepTime"
-                name="prepTime"
-                value={recipe.prepTime}
-                onChange={handleChange}
-                className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                required
-              />
-              {errors.prepTime && <p className="text-red-500 text-sm">{errors.prepTime}</p>}
-            </div>
 
-            <div>
-              <label htmlFor="category" className="block text-lg font-medium text-gray-700">Catégorie</label>
-              <input
-                type="text"
-                id="category"
-                name="category"
-                value={recipe.category}
-                onChange={handleChange}
-                className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                required
-              />
-              {errors.category && <p className="text-red-500 text-sm">{errors.category}</p>}
-            </div>
 
-            <div>
-              <label htmlFor="origin" className="block text-lg font-medium text-gray-700">Origine</label>
-              <input
-                type="text"
-                id="origin"
-                name="origin"
-                value={recipe.origin}
-                onChange={handleChange}
-                className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                required
-              />
-              {errors.origin && <p className="text-red-500 text-sm">{errors.origin}</p>}
-            </div>
-
-            <div>
-              <label className="block text-lg font-medium text-gray-700">Ingrédients</label>
-              {recipe.ingredients?.map((ingredient, index) => (
-                <div key={index} className="flex items-center">
-                  <input
-                    type="text"
-                    value={ingredient}
-                    onChange={(e) => handleArrayChange(e, index, 'ingredients')}
-                    className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                <div className='set'>
+                  <div className='recipe-name'>
+                    <label htmlFor='recipe-name'><h6> Appelation</h6></label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      value={recipe.name}
+                      onChange={handleChange}
+                      placeholder="Nom de la recette"
+                      required
+                       />
+                    {errors.name && <p className="text-red-500 text-sm">{errors.name}</p>}
+                  </div>
+                  <div className='recipe-name'>
+                    <label htmlFor='recipe-description'><h6> Description</h6></label>
+                    <input 
+                      id="description"
+                      name="description"
+                      value={recipe.description}
+                      onChange={handleChange}
+                    placeholder="Un petit mot..." 
+                    type='text' 
                     required
-                  />
-                  <button type="button" onClick={() => handleRemoveField(index, 'ingredients')} className="ml-2 text-red-500">-</button>
+                    />
+                    {errors.description && <p className="text-red-500 text-sm">{errors.description}</p>}
+                  </div>
+                  <div className='recipe-origin'>
+                    <label htmlFor='origin'><h6> Spécialité - Origine</h6></label>
+                    <input id='origin' 
+                    name="origin"
+                        value={recipe.origin}
+                        onChange={handleChange}
+                    placeholder="Ou voyageons nous ?" 
+                    type='text' />
+                      {errors.origin && <p className="text-red-500 text-sm">{errors.origin}</p>}
+                  </div>
+           
                 </div>
-              ))}
-              <button type="button" onClick={() => handleAddField('ingredients')} className="mt-2 text-indigo-500">Ajouter un ingrédient</button>
-            </div>
 
-            <div>
-              <label className="block text-lg font-medium text-gray-700">Étapes de préparation</label>
-              {recipe.preparationSteps?.map((step, index) => (
-                <div key={index} className="flex items-center">
-                  <input
-                    type="text"
-                    value={step}
-                    onChange={(e) => handleArrayChange(e, index, 'preparationSteps')}
-                    className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                    required
-                  />
-                  <button type="button" onClick={() => handleRemoveField(index, 'preparationSteps')} className="ml-2 text-red-500">-</button>
+                  <div className="set m-5 radios" >
+                    <div className='recipe-category'>
+                      <label htmlFor='recipe-category-entree'><h6> Catégorie</h6></label>
+                      <div className='radio-container'>
+
+                        <input 
+                        type='radio' 
+                        name='category' 
+                        id='recipe-category-entree' 
+                        value='Entrée' 
+                        onChange= {handleChange}
+                        />
+                        <label htmlFor='recipe-category-entree'>Entrée</label>
+
+                        <input id='recipe-category-plat' name='category' type='radio' value='Plat principal' onChange={handleChange} />
+                        <label htmlFor='recipe-category-plat'>Plat principal</label>
+                        <input id='recipe-category-dessert' name='category' type='radio' value='Dessert' onChange={handleChange} />
+                        <label htmlFor='recipe-category-dessert'>Dessert</label>
+                      </div>
+                    </div>
+
+
+                    <div className='recipe-difficulty'>
+                      <label htmlFor='recipe-difficulty-facile'><h6>Difficulté</h6></label>
+                      <div className='radio-container'>
+                        <input id='recipe-difficulty-facile' name='difficulty' type='radio' value='Facile'  onChange= {handleChange}/>
+                        <label htmlFor='recipe-difficulty-facile'>Facile</label>
+                        <input id='recipe-difficulty-moyenne' name='difficulty' type='radio' value='Moyenne'  onChange= {handleChange}/>
+                        <label htmlFor='recipe-difficulty-moyenne'>Moyenne</label>
+                        <input id='recipe-difficulty-dure' name='difficulty' type='radio' value='Dure'  onChange= {handleChange}/>
+                        <label htmlFor='recipe-difficulty-dure'>Dure </label>
+                      </div>
+                    </div>
+
+                  </div>
+
+               
+                <div className="set">
+                  <div className='recipe-prep-time'>
+                    <label htmlFor='prepTime-'><h6> Temps de préparation</h6></label>
+                    <input
+                      id="prepTime"
+                      name="prepTime"
+                      value={recipe.prepTime}
+                      onChange={handleChange}
+                      placeholder="Saisir le temps en minutes"
+                      type='text'
+                      required
+                    />
+                  </div>
+                  <div className='recipe-servings'>
+                    <label htmlFor='servings'><h6> Portions</h6></label>
+                    <input
+                      id="servings"
+                      name="servings"
+                      value={recipe.servings}
+                      onChange={handleChange}
+                      placeholder="Nombre de parts"
+                      type='number'
+                      required
+                    />
+                  </div>
+                  <div className='recipe-image'>
+                    <label htmlFor='image'><h6> Téléchargement image</h6></label>
+                    <input
+                      id="image"
+                      name="image"
+                      // value={selectedFile}
+                      value={recipe.image}
+                      onChange={handleChange}
+                      // type='file'
+                      type='text'
+                      required
+                    />
+                  </div>
                 </div>
-              ))}
-              <button type="button" onClick={() => handleAddField('preparationSteps')} className="mt-2 text-indigo-500">Ajouter une étape</button>
+
+                <div className='set'>
+                 
+                 
+                  <div className='recipe-ingredients'>
+                    <label htmlFor='ingredients'><h6 className="inline"> Ingrédients</h6>  <button type="button" onClick={() => handleAddField('ingredients')} className=" inline bg-transparent text-3xl  mt-2 text-indigo-500">+</button></label>
+                    {recipe.ingredients?.map((ingredient, index) => (
+                       <div key={index} className="flex items-center">
+                    <input 
+                    id='ingredients' 
+                          value={ingredient}
+                          onChange={(e) => handleArrayChange(e, index, 'ingredients')}
+                    placeholder="Eau , Sel, Poivre..." 
+                    type='text' 
+                    />
+                      <button type="button" onClick={() => handleRemoveField(index, 'ingredients')} className=" text-3xl text-red-900 bg-transparent">-</button>
+                    </div>
+                   ))}                 
+                  </div>
+                  <div className='recipe-preparation-steps'>
+                    <label htmlFor='preparationSteps'><h6 className="inline"> Etapes de préparation</h6>  <button type="button" onClick={() => handleAddField('preparationSteps')} className=" inline bg-transparent text-3xl  mt-2 text-indigo-500">+</button></label>
+                    {recipe.preparationSteps?.map((step, index) => (
+                       <div key={index} className="flex items-center">
+                    <input 
+                          id='preparationSteps' 
+                          value={step}
+                          onChange={(e) => handleArrayChange(e, index, 'preparationSteps')}
+                    placeholder="Etape ..." 
+                    type='text' 
+                    />
+                        <button type="button" onClick={() => handleRemoveField(index, 'preparationSteps')} className=" text-3xl text-red-900 bg-transparent">-</button>
+                    </div>
+                   ))}                 
+                  </div>
+                  <div className='recipe-cooking-tips'>
+                    <label htmlFor='cookingTips'><h6> Conseils de cuisine</h6></label>
+                    <textarea
+                      id="cookingTips"
+                      name="cookingTips"
+                      rows={10}
+                      cols={50}
+                        value={recipe.cookingTips}
+                      onChange={handleChange}
+                      required
+                    />
+                  </div>
+                  
+
+                </div>
+
+
+
+
+                <div className='set'>
+                 
+                 
+                </div>
+             
+              </header>
+              <footer>
+                <div className='set'>
+                  <button id='send'> <h3>SOUMETTRE AUX PAPILLES !!!</h3>   </button>
+                </div>
+              </footer>
+
+                </form>
+                
             </div>
 
-            <div>
-              <label htmlFor="servings" className="block text-lg font-medium text-gray-700">Portions</label>
-              <input
-                type="number"
-                id="servings"
-                name="servings"
-                value={recipe.servings}
-                onChange={handleChange}
-                className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                required
-              />
-              {errors.servings && <p className="text-red-500 text-sm">{errors.servings}</p>}
-            </div>
 
-            <div>
-              <label htmlFor="cookingTips" className="block text-lg font-medium text-gray-700">Conseils de cuisson</label>
-              <textarea
-                id="cookingTips"
-                name="cookingTips"
-                value={recipe.cookingTips}
-                onChange={handleChange}
-                className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                required
-              />
-              {errors.cookingTips && <p className="text-red-500 text-sm">{errors.cookingTips}</p>}
-            </div>
+            <div className='right-container'>
 
-            <button type="submit" className="mt-4 px-4 py-2 bg-indigo-500 text-white rounded-md">Ajouter la recette</button>
-          </form>
-      </div>
+              <div className='img-container'>
+                <img src={FormImg} />
+              </div>
+              <div className='puppy'>
+                <img src={FormImg} />
+              </div>
+            </div>
+          </div>
+
+
+        </div>
       </main>
     </>
   )
