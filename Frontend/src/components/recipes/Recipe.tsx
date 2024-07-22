@@ -17,16 +17,16 @@ export default function Recipe({ recipe }: RecipeProps) {
 
   // Vérifier si la recette est déjà dans les favoris
   useEffect(() => {
-    const favorites = JSON.parse(localStorage.getItem('Miam-Miammm-favorites')) || [];
-    setIsFavorite(favorites.some(favorite => favorite.id === recipe.id));
+    const favorites = JSON.parse(localStorage.getItem('Miam-Miammm-favorites') || '[]');
+    setIsFavorite(favorites.some((favorite: Recipes) => favorite.id === recipe.id));
   }, [recipe.id]);
 
   const toggleFavorite = () => {
-    let favorites = JSON.parse(localStorage.getItem('Miam-Miammm-favorites')) || [];
+    let favorites = JSON.parse(localStorage.getItem('Miam-Miammm-favorites') || '[]');
 
     if (isFavorite) {
       // Retirer la recette des favoris
-      favorites = favorites.filter(favorite => favorite.id !== recipe.id);
+      favorites = favorites.filter((favorite: Recipes) => favorite.id !== recipe.id);
     } else {
       // Ajouter la recette aux favoris
       favorites.push(recipe);

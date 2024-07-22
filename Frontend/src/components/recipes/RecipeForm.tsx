@@ -23,9 +23,9 @@ export default function RecipeForm() {
     cookingTips: '',
   });
 
-  const [errors, setErrors] = useState<any>({});
+  const [errors, setErrors] = useState<{ [key: string]: string }>({});
   const navigate = useNavigate();
-  const [selectedFile, setSelectedFile] = useState(null)
+  //const [selectedFile, setSelectedFile] = useState(null)
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;

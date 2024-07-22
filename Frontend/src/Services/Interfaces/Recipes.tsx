@@ -1,5 +1,5 @@
 export default interface Recipes {
-  id: number;
+  id: string;
   name: string;
   description: string;
   difficulty: string;

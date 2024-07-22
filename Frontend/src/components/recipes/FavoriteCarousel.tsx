@@ -1,15 +1,14 @@
 
-
-import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Header from '../header/Header';
 import Recipe from './Recipe';
+import Recipes from '../../services/interfaces/Recipes';
 
 
 const FavoriteCarousel = () => {
  // const { favorites } = useFavorites();
- const favorites = JSON.parse(localStorage.getItem('Miam-Miammm-favorites'))
+ const favorites = JSON.parse(localStorage.getItem('Miam-Miammm-favorites') || '[]')
 
   const settings = {
     dots: true,
@@ -48,7 +47,7 @@ const FavoriteCarousel = () => {
         <p>Aucune recette favorite pour le moment.</p>
         ) : (
           <div {...settings}>
-          {favorites.map((recipe) => (
+          {favorites.map((recipe: Recipes) => (
             <div key={recipe.id} className="p-2">
             <Recipe recipe={recipe} />
             </div>

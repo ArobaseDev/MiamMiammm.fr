@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, ChangeEvent } from 'react';
 import { getRecipes } from '../../services/API/Database';
 
 import Recipe from './Recipe';
@@ -7,11 +7,11 @@ import { useSearch } from '../../services/providers/AppProvider';
 import Recipes from '../../services/interfaces/Recipes';
 
 export default function RecipeList() {
-  const [recipes, setRecipes] = useState([]);
-  const [selectedCategories, setSelectedCategories] = useState([]);
-  const [categories, setCategories] = useState([]);
-  const [origins, setOrigins] = useState([]);
-  const [selectedOrigin, setSelectedOrigin] = useState('');
+  const [recipes, setRecipes] = useState<Recipes[]>([]);
+  const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
+  const [categories, setCategories] = useState<string[]>([]);
+  const [origins, setOrigins] = useState<string[]>([]);
+  const [selectedOrigin, setSelectedOrigin] = useState<string>('');
   const { state } = useSearch();
 
   useEffect(() => {
@@ -29,14 +29,14 @@ export default function RecipeList() {
     fetchRecipes();
   }, []);
 
-  const handleCategoryChange = (category) => {
+  const handleCategoryChange = (category: string) => {
     setSelectedCategories((prevCategories) => prevCategories.includes(category)
       ? prevCategories.filter((c) => c !== category)
       : [...prevCategories, category]
     );
   };
 
-  const handleOriginChange = (event) => {
+  const handleOriginChange = (event: ChangeEvent<HTMLSelectElement>) => {
     setSelectedOrigin(event.target.value);
   };
 
