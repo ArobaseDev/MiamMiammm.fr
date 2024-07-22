@@ -2,7 +2,6 @@ import { useParams } from "react-router-dom"
 import { useEffect, useState } from "react";
 import { FaRegHeart } from "react-icons/fa";
 
-
 import Header from "../header/Header";
 import Recipes from "../../services/interfaces/Recipes";
 import { getRecipeById } from "../../services/API/Database";
@@ -12,16 +11,29 @@ export default function RecipeDetail() {
   let { id } = useParams<{ id: string }>();
   const [isFavorite, setIsFavorite] = useState(false);
 
-
-
-
-  const [recipe, setRecipe] = useState<Recipes>([]);
+  const [recipe, setRecipe] = useState<Recipes>({
+    id: 0,
+    name: '',
+    description: '',
+    difficulty:'',
+    image: '',
+    origin: '',
+    prepTime: '',
+    category: '',
+    servings: 0,
+    ingredients: [],
+    preparationSteps: [],
+    cookingTips: ''
+  });
   const [ingredients, setIngredients] = useState<string[]>([]);
   const [steps, setSteps] = useState<string[]>([]);
 
   const getRecipe = async () => {
+    if (!id) {
+      return;
+    }
     try {
-      const response = await getRecipeById(id)
+      const response = await getRecipeById(Number(id))
       console.log("Les données : ", response)
       const ingredients = response.ingredients;
       const steps = response.preparationSteps;

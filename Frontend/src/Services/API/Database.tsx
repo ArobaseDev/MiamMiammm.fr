@@ -9,18 +9,6 @@
  */
 const recipesUrl: string = `http://192.168.0.38:3001/recipes`
 
-// interface Recipes {
-//   id: number;
-//   name: string;
-//   description: string;
-//   ingredients: string[];
-//   steps: string[];
-//   preparationTime: number;
-//   cookingTime: number;
-//   difficulty: number;
-//   servings: number;
-// }
-
 import Recipes from "../interfaces/Recipes";
 
 async function getRecipes(): Promise<Recipes[]> {

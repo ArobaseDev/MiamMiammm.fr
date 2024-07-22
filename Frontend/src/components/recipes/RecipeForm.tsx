@@ -287,8 +287,8 @@ export default function RecipeForm() {
               <div className='img-container'>
                 <img src={FormImg} />
               </div>
-              <div className='puppy'>
-                <img src={FormImg} />
+              <div className='img-container'>
+                <img src="https://spoonacular.com/recipeImages/660405-556x370.jpg" alt="image de plat" />
               </div>
             </div>
           </div>

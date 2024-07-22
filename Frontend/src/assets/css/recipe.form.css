@@ -6,12 +6,12 @@
 }
 
 main {
- background-color: #d3c8d45b;
  border-radius: 2rem;
  margin-right: 1rem;
 }
 
  .create-recipe-form {
+  background-color: #d3c8d45b;
   display: flex;
   flex-direction: column;
   justify-content: center;
